@@ -1,0 +1,32 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImlhdCI6MTY2NDM1MTQ1NSwiZXhwIjoxNjY0MzUxNDc1fQ.We9Zg1czX8Y9nzaQtkFhsU04ZSyQaGh8kool2Uy4_xo
+
+###
+
+DELETE  http://localhost:4000/logout
+Content-Type: application/json 
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImhlaWdodCI6MTgxLCJnZW5kZXIiOiJNYWxlIiwiaWF0IjoxNjY0MzUxNDQyfQ.IIlEIH5i_yHxLqZcjJz1VznL3MQoFU43_TOTzndPPRE"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json 
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleCIsImhlaWdodCI6MTgxLCJnZW5kZXIiOiJNYWxlIiwiaWF0IjoxNjY0MzUxNDQyfQ.IIlEIH5i_yHxLqZcjJz1VznL3MQoFU43_TOTzndPPRE"
+}
+
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json 
+
+{
+    "name" : "Alex",
+    "height" : 181,
+    "gender" : "Male"
+}
